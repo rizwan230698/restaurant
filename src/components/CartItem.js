@@ -1,20 +1,17 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-const CartItem = ({ item: { image_url, price, name, quantity } }) => {
-  console.log(image_url, price, name, quantity);
-  return (
-    <View style={styles.cartItem}>
-      <Image source={{ uri: image_url }} style={styles.image} />
-      <View style={styles.itemDetails}>
-        <Text>{name}</Text>
-        <Text>
-          {quantity} x ${price}
-        </Text>
-      </View>
+const CartItem = ({ item: { image_url, price, name, quantity } }) => (
+  <View style={styles.cartItem}>
+    <Image source={{ uri: image_url }} style={styles.image} />
+    <View style={styles.itemDetails}>
+      <Text>{name}</Text>
+      <Text>
+        {quantity} x ${price}
+      </Text>
     </View>
-  );
-};
+  </View>
+);
 
 const styles = StyleSheet.create({
   cartItem: {
