@@ -43,7 +43,7 @@ const Checkout = ({ navigation }) => {
   );
 
   const ListFooter = () => (
-    <View style={styles.total}>
+    <View style={styles.footer}>
       <Text>Would you like to add some tip?</Text>
       <View style={styles.input}>
         <TextInput
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     width: '25%',
     alignItems: 'center',
   },
-  total: {
+  footer: {
     marginTop: 30,
     width: 280,
   },
@@ -125,7 +125,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
     alignItems: 'center',
     backgroundColor: 'black',
-    paddingHorizontal: 25,
     paddingVertical: 8,
   },
 });
